@@ -6,7 +6,7 @@ import os
 import hashlib
 import time
  
-IP = socket.gethostbyname(socket.gethostname())
+IP = "0.0.0.0"
 PORT = 4456
 ADDR = (IP, PORT)
 SIZE = 4096

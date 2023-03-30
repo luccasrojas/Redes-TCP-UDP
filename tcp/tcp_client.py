@@ -5,7 +5,7 @@ import time
 import threading
 
 # Configuración del servidor
-IP = socket.gethostbyname(socket.gethostname())
+IP = "192.168.140.76"
 PORT = 4456
 ADDR = (IP, PORT)
 SIZE = 4096
