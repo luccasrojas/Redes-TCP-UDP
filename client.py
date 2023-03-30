@@ -70,7 +70,7 @@ def recibir_archivo(num_cliente):
     finally:
         # Cerrar socket
         client_socket.close()
-
-for i in range(1,26):
+num_clientes = int(input("Ingrese el numero de clientes: "))
+for i in range(1, num_clientes+1):
     thread = threading.Thread(target=recibir_archivo, args=(i,))
     thread.start()
