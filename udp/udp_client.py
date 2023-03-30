@@ -1,18 +1,23 @@
-from socket import *
+import socket
+import sys
 
-UDP_IP = "127.0.0.1" # localhost
-PORT = 5000
-SIZE = 4096
-FORMAT = "utf-8"
-ADDR = (UDP_IP, PORT)
+# Create a UDP socket
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-sock = socket(AF_INET, SOCK_DGRAM)
-msg = "Hello, World!"
-print(f"[CLIENT] Enviando {msg} a {ADDR}")
-sock.sendto(msg.encode(FORMAT), ADDR)
+server_address = ('localhost', 10000)
+message = b'This is the message.  It will be repeated.'
 
-data, addr = sock.recvfrom(SIZE)
-print(f"[CLIENT] Recibido {data} de {addr}")
-sock.sendto("ACK".encode(FORMAT), addr)
+try:
 
-sock.close()
+    # Send data
+    print('sending {!r}'.format(message))
+    sent = sock.sendto(message, server_address)
+
+    # Receive response
+    print('waiting to receive')
+    data, server = sock.recvfrom(4096)
+    print('received {!r}'.format(data))
+
+finally:
+    print('closing socket')
+    sock.close()
