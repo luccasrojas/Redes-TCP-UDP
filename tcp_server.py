@@ -78,11 +78,11 @@ def handle_client(conn, addr, file_name,barrier):
 
     # Registro de la conexión en el archivo de logs
     log_file_name = time.strftime("%Y-%m-%d-%H-%M-%S-log.txt")
-    log_file_path = os.path.join("./Logs", log_file_name)
+    log_file_path = os.path.join("./LogServer", log_file_name)
 
     with open(log_file_path, "a") as f:
-        f.write(f"Cliente: {addr}, Archivo: {file_name}, Tamaño: {file_size}, "
-                f"Hash: {hash_value}, Confirmación: {confirmation}, Tiempo: {tiempo}\n")
+        f.write(f"Cliente: {addr}, NombreArchivo: {file_name}, TamanioArchivo: {file_size}, "
+                f"Hash: {hash_value}, Entrega exitosa: {confirmation}, Tiempo: {tiempo}\n")
     conn.close()
     print(f"[SERVER] Cliente {addr} desconectado")
 
@@ -102,7 +102,7 @@ def manage_connections(sock, num_connections):
         print("Archivo no válido")
         file_key = input("Seleccione el archivo a enviar: ")
     file_name = FILES[file_key]
-
+    
     while counter < num_connections:
         conn, addr = sock.accept()
         thread = threading.Thread(target=handle_client, args=(conn, addr, file_name,barrier))

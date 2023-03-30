@@ -32,6 +32,7 @@ def recibir_archivo(num_cliente):
         # Abrir archivo para escritura
         
         counter = 0
+        t1 = time.time()
         with open(os.path.join(RECEIVED_DIR, f"Cliente{num_cliente}.txt"), 'wb') as f:
             while True:
                 data = client_socket.recv(SIZE)
@@ -40,10 +41,8 @@ def recibir_archivo(num_cliente):
                     break
                 f.write(data)
                 counter += 1
-
         print(counter)
-        print("El tamanio del archivo es de", os.path.getsize(os.path.join(RECEIVED_DIR, f"Cliente{num_cliente}.txt")), "bytes")
-
+        t2 = time.time()
         #ACK llego el archivo
         client_socket.sendall(b"Archivo recibido")
 
@@ -68,6 +67,14 @@ def recibir_archivo(num_cliente):
     except:
         print(f"No se pudo establecer conexión con el servidor para el cliente {num_cliente}.")
     finally:
+
+        log_file_name = time.strftime("%Y-%m-%d-%H-%M-%S-log.txt")
+        log_file_path = os.path.join("./LogClient", log_file_name)
+        file_size = os.path.getsize(os.path.join(RECEIVED_DIR, f"Cliente{num_cliente}.txt"))
+        tiempo = t2-t1
+        with open(log_file_path, "a") as f:
+            f.write(f"Cliente: {num_cliente}, NombreArchivo: Cliente{num_cliente}.txt, TamanioArchivo: {file_size}, " f"Hash: {hash_value}, Entrega exitosa: {file_hash == hash_value}, Tiempo: {tiempo}\n")
+
         # Cerrar socket
         client_socket.close()
 num_clientes = int(input("Ingrese el numero de clientes: "))
