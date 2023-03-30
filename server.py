@@ -9,7 +9,7 @@ import time
 IP = socket.gethostbyname(socket.gethostname())
 PORT = 4456
 ADDR = (IP, PORT)
-SIZE = 1024
+SIZE = 4096
 FORMAT = "utf-8"
 
 # Directorio donde se encuentran los archivos
@@ -39,18 +39,35 @@ def handle_client(conn, addr, file_name,barrier):
     file_path = os.path.join(FILE_DIR, file_name)
     file_size = os.path.getsize(file_path)
 
-    print("Enviando archivo")
+    print("Enviando archivo de tamaño", file_size, "bytes")
+    counter = 0
     with open(file_path, "rb") as f:
-        data = f.read()
         t1 = time.time()
-        conn.sendall(data)
+        while True:
+            data = f.read(SIZE)
+            if not data:
+                break
+            conn.sendall(data)
+            conn.recv(SIZE)
+            counter += 1
+    print(counter)
+    conn.sendall(b"FIN")
+    conn.recv(SIZE)
+        
+    print("Archivo enviado")
+    
     #ACK llego el archivo
     conn.recv(SIZE)
+    print("El archivo fue recibido")
     t2 = time.time()
     tiempo = t2-t1
 
     # Calcular hash del archivo
-    hash_value = hashlib.md5(data).hexdigest()
+    with open(file_path, "rb") as f:
+        md5 = hashlib.md5()
+        for chunk in iter(lambda: f.read(4096), b""):
+            md5.update(chunk)
+        hash_value =md5.hexdigest()
 
     print("Enviando hash")
     conn.sendall(hash_value.encode())
