@@ -5,8 +5,8 @@ import time
 import threading
 
 # Configuración del servidor
-IP = "192.168.251.76"
-# IP = "192.168.251.168"
+# IP = "192.168.251.76"
+IP = "192.168.251.168"
 PORT = 4456
 ADDR = (IP, PORT)
 SIZE = 4096
