@@ -1,0 +1,8 @@
+Cliente: 3, NombreArchivo: Cliente3.txt, TamanioArchivo: 61662309, Tiempo: 2.2867281436920166
+Cliente: 10, NombreArchivo: Cliente10.txt, TamanioArchivo: 65995877, Tiempo: 2.5530917644500732
+Cliente: 9, NombreArchivo: Cliente9.txt, TamanioArchivo: 66569317, Tiempo: 2.555608034133911
+Cliente: 5, NombreArchivo: Cliente5.txt, TamanioArchivo: 65467493, Tiempo: 2.5585925579071045
+Cliente: 2, NombreArchivo: Cliente2.txt, TamanioArchivo: 66315365, Tiempo: 2.5634682178497314
+Cliente: 6, NombreArchivo: Cliente6.txt, TamanioArchivo: 66270309, Tiempo: 2.5672621726989746
+Cliente: 7, NombreArchivo: Cliente7.txt, TamanioArchivo: 66139237, Tiempo: 2.5669782161712646
+Cliente: 1, NombreArchivo: Cliente1.txt, TamanioArchivo: 66131045, Tiempo: 2.570626735687256

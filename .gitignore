@@ -1,3 +1,10 @@
 
-*.txt
-*.zip
+tcp/ArchivosRecibidos/*.txt
+tcp/Files/*.txt
+tcp/ArchivosRecibidos/*.zip
+tcp/Files/*.zip
+
+udp/ArchivosRecibidos/*.txt
+udp/Files/*.txt
+udp/ArchivosRecibidos/*.zip
+udp/Files/*.zip

@@ -5,7 +5,7 @@ import time
 import threading
 
 # Configuración del servidor
-IP = "192.168.140.76"
+IP = "127.0.0.1" # "192.168.1.142"
 PORT = 4456
 ADDR = (IP, PORT)
 SIZE = 4096
@@ -77,7 +77,9 @@ def recibir_archivo(num_cliente):
 
         # Cerrar socket
         client_socket.close()
-num_clientes = int(input("Ingrese el numero de clientes: "))
-for i in range(1, num_clientes+1):
-    thread = threading.Thread(target=recibir_archivo, args=(i,))
-    thread.start()
+
+if __name__ == "__main__":
+    num_clientes = int(input("Ingrese el numero de clientes: "))
+    for i in range(1, num_clientes+1):
+        thread = threading.Thread(target=recibir_archivo, args=(i,))
+        thread.start()

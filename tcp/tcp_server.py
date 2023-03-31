@@ -1,6 +1,4 @@
-
 import socket
-from tqdm import tqdm
 import threading
 import os
 import hashlib
@@ -21,8 +19,7 @@ FILES = {
     "file2": "file2.txt"
 }
 
-def handle_client(conn, addr, file_name,barrier):
-
+def handle_client(conn, addr, file_name, barrier):
     #Establecer la conexion con el cliente
     print(f"[SERVER] Cliente conectado desde {addr}")
     #Recibe que esta listo para conectarse
@@ -105,7 +102,10 @@ def manage_connections(sock, num_connections):
     
     while counter < num_connections:
         conn, addr = sock.accept()
-        thread = threading.Thread(target=handle_client, args=(conn, addr, file_name,barrier))
+        print("-"*50)
+        print(f"Conn: {conn}, Addr: {addr}")
+        print("-"*50)
+        thread = threading.Thread(target=handle_client, args=(conn, addr, file_name, barrier))
         threads.append(thread)
         """ Accepting the connection from the client. """
         # Pedir al usuario que seleccione el archivo a enviar

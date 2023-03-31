@@ -1,0 +1,2 @@
+Cliente: 1, NombreArchivo: Cliente1.txt, TamanioArchivo: 63427685, Tiempo: 0.25334692001342773
+Cliente: 2, NombreArchivo: Cliente2.txt, TamanioArchivo: 59204709, Tiempo: 0.25948262214660645
