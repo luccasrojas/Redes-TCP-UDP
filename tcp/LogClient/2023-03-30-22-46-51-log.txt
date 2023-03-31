@@ -1,0 +1,1 @@
+Cliente: 18, NombreArchivo: Cliente18.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.119961738586426

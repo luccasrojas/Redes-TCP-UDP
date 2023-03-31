@@ -1,8 +1,0 @@
-Cliente: 2, NombreArchivo: Cliente2.txt, TamanioArchivo: 72832101, Hash: 953254063dbdad709d341f35bd6c3b8d, Entrega exitosa: True, Tiempo: 5.334101915359497
-Cliente: 1, NombreArchivo: Cliente1.txt, TamanioArchivo: 72832101, Hash: 953254063dbdad709d341f35bd6c3b8d, Entrega exitosa: True, Tiempo: 5.363901138305664
-Cliente: 5, NombreArchivo: Cliente5.txt, TamanioArchivo: 72832101, Hash: 953254063dbdad709d341f35bd6c3b8d, Entrega exitosa: True, Tiempo: 5.363418340682983
-Cliente: 10, NombreArchivo: Cliente10.txt, TamanioArchivo: 72832101, Hash: 953254063dbdad709d341f35bd6c3b8d, Entrega exitosa: True, Tiempo: 5.359024524688721
-Cliente: 8, NombreArchivo: Cliente8.txt, TamanioArchivo: 72832101, Hash: 953254063dbdad709d341f35bd6c3b8d, Entrega exitosa: True, Tiempo: 5.372479200363159
-Cliente: 7, NombreArchivo: Cliente7.txt, TamanioArchivo: 72832101, Hash: 953254063dbdad709d341f35bd6c3b8d, Entrega exitosa: True, Tiempo: 5.371095895767212
-Cliente: 3, NombreArchivo: Cliente3.txt, TamanioArchivo: 72832101, Hash: 953254063dbdad709d341f35bd6c3b8d, Entrega exitosa: True, Tiempo: 5.373499393463135
-Cliente: 6, NombreArchivo: Cliente6.txt, TamanioArchivo: 72832101, Hash: 953254063dbdad709d341f35bd6c3b8d, Entrega exitosa: True, Tiempo: 5.364494323730469

@@ -1,5 +1,0 @@
-Cliente: ('127.0.0.1', 48349), NombreArchivo: File100.zip, TamanioArchivo: 72832101, Tiempo: 1.774953842163086
-Cliente: ('127.0.0.1', 58467), NombreArchivo: File100.zip, TamanioArchivo: 72832101, Tiempo: 1.8665800094604492
-Cliente: ('127.0.0.1', 38859), NombreArchivo: File100.zip, TamanioArchivo: 72832101, Tiempo: 1.871920108795166
-Cliente: ('127.0.0.1', 43975), NombreArchivo: File100.zip, TamanioArchivo: 72832101, Tiempo: 1.8717551231384277
-Cliente: ('127.0.0.1', 33185), NombreArchivo: File100.zip, TamanioArchivo: 72832101, Tiempo: 1.8753013610839844

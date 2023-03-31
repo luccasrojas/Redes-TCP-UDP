@@ -1,0 +1,14 @@
+Cliente: 19, NombreArchivo: Cliente19.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.120813608169556
+Cliente: 7, NombreArchivo: Cliente7.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.152329683303833
+Cliente: 25, NombreArchivo: Cliente25.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.203155755996704
+Cliente: 1, NombreArchivo: Cliente1.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.16170358657837
+Cliente: 16, NombreArchivo: Cliente16.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.16782808303833
+Cliente: 2, NombreArchivo: Cliente2.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.125528812408447
+Cliente: 12, NombreArchivo: Cliente12.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.131621837615967
+Cliente: 17, NombreArchivo: Cliente17.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.155972957611084
+Cliente: 11, NombreArchivo: Cliente11.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.111698865890503
+Cliente: 20, NombreArchivo: Cliente20.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.13670253753662
+Cliente: 23, NombreArchivo: Cliente23.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.135337352752686
+Cliente: 9, NombreArchivo: Cliente9.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.120102643966675
+Cliente: 13, NombreArchivo: Cliente13.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.10667848587036
+Cliente: 21, NombreArchivo: Cliente21.txt, TamanioArchivo: 101964686, Hash: 2d6a9eb2773deec38bdb67a031f6fb70, Entrega exitosa: True, Tiempo: 19.213899850845337
