@@ -1,13 +1,12 @@
 
 import socket
-from tqdm import tqdm
 import threading
 import os
 import hashlib
 import time
  
 IP = "0.0.0.0"
-PORT = 4456
+PORT = 10000
 ADDR = (IP, PORT)
 SIZE = 4096
 FORMAT = "utf-8"
