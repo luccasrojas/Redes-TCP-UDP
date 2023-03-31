@@ -1,0 +1,17 @@
+Cliente: 25, NombreArchivo: Cliente25.txt, TamanioArchivo: 71421952, Tiempo: 7.6183717250823975
+Cliente: 22, NombreArchivo: Cliente22.txt, TamanioArchivo: 71560078, Tiempo: 7.6244847774505615
+Cliente: 18, NombreArchivo: Cliente18.txt, TamanioArchivo: 72358798, Tiempo: 7.630662202835083
+Cliente: 17, NombreArchivo: Cliente17.txt, TamanioArchivo: 72047502, Tiempo: 7.6327903270721436
+Cliente: 20, NombreArchivo: Cliente20.txt, TamanioArchivo: 72108942, Tiempo: 7.636576890945435
+Cliente: 11, NombreArchivo: Cliente11.txt, TamanioArchivo: 72093696, Tiempo: 7.648720026016235
+Cliente: 1, NombreArchivo: Cliente1.txt, TamanioArchivo: 72391566, Tiempo: 7.653440475463867
+Cliente: 12, NombreArchivo: Cliente12.txt, TamanioArchivo: 71441294, Tiempo: 7.655482053756714
+Cliente: 15, NombreArchivo: Cliente15.txt, TamanioArchivo: 72084366, Tiempo: 7.655707120895386
+Cliente: 10, NombreArchivo: Cliente10.txt, TamanioArchivo: 70941582, Tiempo: 7.656824588775635
+Cliente: 9, NombreArchivo: Cliente9.txt, TamanioArchivo: 72596366, Tiempo: 7.664611101150513
+Cliente: 13, NombreArchivo: Cliente13.txt, TamanioArchivo: 72809358, Tiempo: 7.664364576339722
+Cliente: 7, NombreArchivo: Cliente7.txt, TamanioArchivo: 71786496, Tiempo: 7.667373418807983
+Cliente: 14, NombreArchivo: Cliente14.txt, TamanioArchivo: 72981390, Tiempo: 7.665569067001343
+Cliente: 2, NombreArchivo: Cliente2.txt, TamanioArchivo: 72424334, Tiempo: 7.671586513519287
+Cliente: 16, NombreArchivo: Cliente16.txt, TamanioArchivo: 71895950, Tiempo: 7.6691553592681885
+Cliente: 6, NombreArchivo: Cliente6.txt, TamanioArchivo: 73059214, Tiempo: 7.676202297210693

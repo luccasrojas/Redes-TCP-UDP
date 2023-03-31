@@ -1,0 +1,1 @@
+Cliente: 10, NombreArchivo: Cliente10.txt, TamanioArchivo: 2611401, Hash: e3467a33f46a4a1e1a9df9f1fb91ada2, Entrega exitosa: True, Tiempo: 13.212793827056885

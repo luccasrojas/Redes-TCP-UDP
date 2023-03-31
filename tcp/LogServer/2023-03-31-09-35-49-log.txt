@@ -1,0 +1,10 @@
+Cliente: ('192.168.140.76', 63804), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.741013050079346
+Cliente: ('192.168.140.76', 63799), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.805840253829956
+Cliente: ('192.168.140.76', 63806), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.772927045822144
+Cliente: ('192.168.140.76', 63800), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.700123071670532
+Cliente: ('192.168.140.76', 63798), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.6555495262146
+Cliente: ('192.168.140.76', 63801), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.669435739517212
+Cliente: ('192.168.140.76', 63803), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.676297664642334
+Cliente: ('192.168.140.76', 63797), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.686087369918823
+Cliente: ('192.168.140.76', 63802), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.79486870765686
+Cliente: ('192.168.140.76', 63805), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.667378425598145
