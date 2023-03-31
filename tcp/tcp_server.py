@@ -5,7 +5,7 @@ import hashlib
 import time
  
 IP = "0.0.0.0"
-PORT = 10000
+PORT = 4456
 ADDR = (IP, PORT)
 SIZE = 4096
 FORMAT = "utf-8"
@@ -45,11 +45,9 @@ def handle_client(conn, addr, file_name, barrier):
             if not data:
                 break
             conn.sendall(data)
-            conn.recv(SIZE)
             counter += 1
     print(counter)
     conn.sendall(b"FIN")
-    conn.recv(SIZE)
         
     print("Archivo enviado")
     

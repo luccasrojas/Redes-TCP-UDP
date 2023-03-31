@@ -1,0 +1,10 @@
+Cliente: 2, NombreArchivo: Cliente2.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 8.915947914123535
+Cliente: 3, NombreArchivo: Cliente3.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 8.917943716049194
+Cliente: 10, NombreArchivo: Cliente10.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 8.964817762374878
+Cliente: 6, NombreArchivo: Cliente6.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 8.951852083206177
+Cliente: 8, NombreArchivo: Cliente8.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 9.277341365814209
+Cliente: 7, NombreArchivo: Cliente7.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 8.967810153961182
+Cliente: 5, NombreArchivo: Cliente5.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 9.217360973358154
+Cliente: 9, NombreArchivo: Cliente9.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 9.250414848327637
+Cliente: 4, NombreArchivo: Cliente4.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 9.263378620147705
+Cliente: 1, NombreArchivo: Cliente1.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 9.23146367073059

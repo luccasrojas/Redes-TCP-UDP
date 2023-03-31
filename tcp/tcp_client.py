@@ -5,8 +5,9 @@ import time
 import threading
 
 # Configuración del servidor
-IP = "192.168.140.76"
-PORT = 10000
+IP = "192.168.251.76"
+# IP = "192.168.251.168"
+PORT = 4456
 ADDR = (IP, PORT)
 SIZE = 4096
 FORMAT = "utf-8"
@@ -36,7 +37,6 @@ def recibir_archivo(num_cliente):
         with open(os.path.join(RECEIVED_DIR, f"Cliente{num_cliente}.txt"), 'wb') as f:
             while True:
                 data = client_socket.recv(SIZE)
-                client_socket.sendall(b"ACK")
                 if data == b"FIN":
                     break
                 f.write(data)
