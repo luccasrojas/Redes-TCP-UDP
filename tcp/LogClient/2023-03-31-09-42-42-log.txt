@@ -1,3 +1,0 @@
-Cliente: 6, NombreArchivo: Cliente6.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 11.121543169021606
-Cliente: 5, NombreArchivo: Cliente5.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 11.015249490737915
-Cliente: 9, NombreArchivo: Cliente9.txt, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: True, Tiempo: 11.078225135803223

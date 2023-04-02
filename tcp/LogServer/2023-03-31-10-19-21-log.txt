@@ -1,1 +1,0 @@
-Cliente: ('192.168.251.76', 64529), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 7.551206111907959

@@ -6,7 +6,7 @@ import threading
 
 # Configuración del servidor
 # IP = "192.168.251.76"
-IP = "192.168.251.168"
+IP = "127.0.0.1"
 PORT = 4456
 ADDR = (IP, PORT)
 SIZE = 4096
@@ -68,12 +68,19 @@ def recibir_archivo(num_cliente):
         log_file_name = time.strftime("%Y-%m-%d-%H-%M-%S-log.txt")
         log_file_path = os.path.join("./LogClient", log_file_name)
         file_size = os.path.getsize(os.path.join(RECEIVED_DIR, f"Cliente{num_cliente}.txt"))
+
+        # Revisar si el archivo de logs existe, si no existe, crearlo con los encabezados
+        if not os.path.exists(log_file_path):
+            with open(log_file_path, "w") as f:
+                f.write("Cliente,NombreArchivo,TamanioArchivo,Hash,Entrega exitosa,Tiempo\n")
+
         tiempo = t2-t1
         with open(log_file_path, "a") as f:
-            f.write(f"Cliente: {num_cliente}, NombreArchivo: Cliente{num_cliente}.txt, TamanioArchivo: {file_size}, " f"Hash: {hash_value}, Entrega exitosa: {file_hash == hash_value}, Tiempo: {tiempo}\n")
+            self_addr_port = client_socket.getsockname()
+            f.write(f"{self_addr_port[1]},Cliente{num_cliente}.txt,{file_size},{hash_value},{file_hash == hash_value},{tiempo}\n")
 
     except:
-        print(f"No se pudo establecer conexión con el servidor para el cliente {num_cliente}.")
+        print(f"No se pudo establecer conexión con el servidor para el cliente {num_cliente} ({ADDR[1]}).")
 
         # Cerrar socket
     client_socket.close()

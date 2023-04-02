@@ -52,9 +52,13 @@ def handle_client(conn, addr, file_name):
     log_file_name = time.strftime("%Y-%m-%d-%H-%M-%S-log.txt")
     log_file_path = os.path.join("./LogServer", log_file_name)
 
+    # Revisar si el archivo de logs existe, si no existe, crearlo con los encabezados
+    if not os.path.exists(log_file_path):
+        with open(log_file_path, "w") as f:
+            f.write("Cliente,NombreArchivo,TamanioArchivo,Tiempo\n")
+
     with open(log_file_path, "a") as f:
-        f.write(f"Cliente: {addr}, NombreArchivo: {file_name}, TamanioArchivo: {file_size}, "
-                f"Tiempo: {tiempo}\n")
+        f.write(f"{addr[1]},{file_name},{file_size},{tiempo}\n")
 
     print(f"[SERVER] Cliente {addr} desconectado")
 

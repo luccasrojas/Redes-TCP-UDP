@@ -1,0 +1,6 @@
+Cliente,NombreArchivo,TamanioArchivo,Hash,Entrega exitosa,Tiempo
+58502,File100.zip,101963996,6793214f5f469d55ee4d8c02caae5b38,Me llego el archivo y el hash,1.9972994327545166
+58501,File100.zip,101963996,6793214f5f469d55ee4d8c02caae5b38,Me llego el archivo y el hash,2.045539140701294
+58500,File100.zip,101963996,6793214f5f469d55ee4d8c02caae5b38,Me llego el archivo y el hash,2.0227437019348145
+58503,File100.zip,101963996,6793214f5f469d55ee4d8c02caae5b38,Me llego el archivo y el hash,2.0826416015625
+58504,File100.zip,101963996,6793214f5f469d55ee4d8c02caae5b38,Me llego el archivo y el hash,2.05405855178833

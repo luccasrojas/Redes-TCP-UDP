@@ -1,0 +1,2 @@
+Cliente,NombreArchivo,TamanioArchivo,Tiempo
+52564,File100.zip,101963996,0.3539760112762451

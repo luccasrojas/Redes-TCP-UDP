@@ -1,7 +1,0 @@
-Cliente: ('192.168.140.76', 63885), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.651779890060425
-Cliente: ('192.168.140.76', 63894), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.720283031463623
-Cliente: ('192.168.140.76', 63887), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.890143632888794
-Cliente: ('192.168.140.76', 63891), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.907749891281128
-Cliente: ('192.168.140.76', 63888), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.782231330871582
-Cliente: ('192.168.140.76', 63886), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 10.892457008361816
-Cliente: ('192.168.140.76', 63892), NombreArchivo: File100.zip, TamanioArchivo: 202198627, Hash: 76542bd4451819f043fcf88e1efa943d, Entrega exitosa: Me llego el archivo y el hash, Tiempo: 11.180548191070557

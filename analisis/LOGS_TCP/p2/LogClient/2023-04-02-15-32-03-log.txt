@@ -1,0 +1,2 @@
+Cliente,NombreArchivo,TamanioArchivo,Hash,Entrega exitosa,Tiempo
+58488,Cliente1.txt,250000000,d0a97c74c5dfc126307d63e9928983c6,True,1.8043286800384521

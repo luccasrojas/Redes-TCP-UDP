@@ -1,0 +1,2 @@
+Cliente,NombreArchivo,TamanioArchivo,Tiempo
+52564,Cliente1.txt,87804124,0.356982946395874

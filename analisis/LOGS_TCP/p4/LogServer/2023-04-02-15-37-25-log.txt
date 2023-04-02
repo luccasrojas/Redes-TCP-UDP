@@ -1,0 +1,6 @@
+Cliente,NombreArchivo,TamanioArchivo,Hash,Entrega exitosa,Tiempo
+58617,file2.txt,250000000,d0a97c74c5dfc126307d63e9928983c6,Me llego el archivo y el hash,4.344315528869629
+58619,file2.txt,250000000,d0a97c74c5dfc126307d63e9928983c6,Me llego el archivo y el hash,4.430467128753662
+58616,file2.txt,250000000,d0a97c74c5dfc126307d63e9928983c6,Me llego el archivo y el hash,4.59980034828186
+58618,file2.txt,250000000,d0a97c74c5dfc126307d63e9928983c6,Me llego el archivo y el hash,4.579676389694214
+58620,file2.txt,250000000,d0a97c74c5dfc126307d63e9928983c6,Me llego el archivo y el hash,4.6080567836761475
