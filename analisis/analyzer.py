@@ -3,7 +3,22 @@
 import os
 import re
 
+def CC_to_w(string):
+    # Split the string into words using regular expressions
+    words = re.findall(r'[A-Z]?[a-z]+', string)
+    # Join the words with spaces and return the result
+    return ' '.join(words)
+
 logs = dict()
+
+dsc = {
+    "p1": "1 cliente, archivo de 101.96MB",
+    "p2": "1 cliente, archivo de 250MB",
+    "p3": "5 clientes, archivo de 101.96MB",
+    "p4": "5 clientes, archivo de 250MB",
+    "p5": "10 clientes, archivo de 101.96MB",
+    "p6": "10 clientes, archivo de 250MB",
+}
 
 def savep(i, p):
     pathClient = f"LOGS_{p}/p{i}/LogClient"
@@ -29,9 +44,7 @@ def savep(i, p):
                         lineS = lineS.strip().split(",")
 
                         num_c = lineC[1].split(".")[0][-1]
-                        print(f"p{i} - {num_c} - {p} - {file} - {lineC[0]}")
 
-                        print("\tCliente:", lineC)
                         # Datos del cliente
                         logs[f"p{i}"][num_c] = logs[f"p{i}"].get(num_c, {"TCP": dict(), "UDP": dict()})
                         for j in range(len(headerC)):
@@ -47,7 +60,6 @@ def savep(i, p):
                             logs[f"p{i}"][num_c][p][headerC[j]] = lineC[j]
                         logs[f"p{i}"][num_c][p]["TasaCliente"] = logs[f"p{i}"][num_c][p]['BytesCliente'] / logs[f"p{i}"][num_c][p]['TiempoCliente']
                     
-                        print("\tServidor:", lineS)
                         # Datos del servidor
                         for j in range(len(headerS)):
                             if headerS[j] in ["Hash", "NombreArchivo", "Entrega exitosa"]:
@@ -64,7 +76,94 @@ def savep(i, p):
                             logs[f"p{i}"][num_c][p][headerS[j]] = lineS[j]
                         logs[f"p{i}"][num_c][p]["TasaServidor"] = logs[f"p{i}"][num_c][p]['BytesServidor'] / logs[f"p{i}"][num_c][p]['TiempoServidor']
 
-def main():
+                        # reordenar las columnas en el orden: "Entrega exitosa" (solo TCP), "PuertoCliente", "PuertoServidor", "BytesCliente", "BytesServidor", "TasaCliente", "TasaServidor", "TiempoCliente", "TiempoServidor"
+                        if p == "TCP":
+                            logs[f"p{i}"][num_c][p] = {k: logs[f"p{i}"][num_c][p][k] for k in ["Entrega exitosa", "PuertoCliente", "PuertoServidor", "BytesCliente", "BytesServidor", "TasaCliente", "TasaServidor", "TiempoCliente", "TiempoServidor"]}
+                        else:
+                            logs[f"p{i}"][num_c][p] = {k: logs[f"p{i}"][num_c][p][k] for k in ["PuertoCliente", "PuertoServidor", "BytesCliente", "BytesServidor", "TasaCliente", "TasaServidor", "TiempoCliente", "TiempoServidor"]}
+
+def tomd(p, file):
+    if file is None:
+        # Convertir a código Markdown, donde p1, p2, ..., p6 son las tablas
+        print(f"\n# Pruebas {p}\n")
+        for k,v in logs.items():
+            # k: p1, p2, ..., p6
+            # v: {1: {"TCP": {...}, "UDP": {...}}, 2: {"TCP": {...}, "UDP": {...}}, 2: {...}}
+            print(f"## Prueba {k[-1]}\n{dsc[k]}\n")
+
+            print("| # |", end="")
+            for c in v["1"][p].keys():
+                if c in ["BytesCliente", "BytesServidor"]:
+                    print(f" {CC_to_w(c)} (MB) |", end="")
+                elif c in ["TasaCliente", "TasaServidor"]:
+                    print(f" {CC_to_w(c)} (MBps) |", end="")
+                elif c in ["TiempoCliente", "TiempoServidor"]:
+                    print(f" {CC_to_w(c)} (ms) |", end="")
+                else:
+                    print(f" {CC_to_w(c)} |", end="") # Nombre de las columnas
+            print()
+
+            print("| --- |", end="")
+            for c in v["1"][p].keys():
+                print(" --- |", end="")
+            print()
+
+            for k2, v2 in v.items():
+                # k2: 1, 2, 3, 4, 5, ...
+                # v2: {"TCP": {...}, "UDP": {...}}
+                print(f"| {k2} |", end="")
+                for c, v3 in v2[p].items():
+                    if c in ["BytesCliente", "BytesServidor", "TasaCliente", "TasaServidor"]:
+                        print(f" {(v3/1e6):.2f} |", end="")
+                    elif c in ["TiempoCliente", "TiempoServidor"]:
+                        print(f" {(v3*1e3):.2f} |", end="")
+                    else:
+                        print(f" {v3} |", end="")
+                print()
+                    
+            print()
+    else:
+        # Convertir a código Markdown, donde p1, p2, ..., p6 son las tablas
+        print(f"\n## Pruebas {p}\n", file=file)
+        for k,v in logs.items():
+            # k: p1, p2, ..., p6
+            # v: {1: {"TCP": {...}, "UDP": {...}}, 2: {"TCP": {...}, "UDP": {...}}, 2: {...}}
+            print(f"### Prueba {k[-1]}\n{dsc[k]}\n", file=file)
+
+            print("| # |", end="", file=file)
+            for c in v["1"][p].keys():
+                if c in ["BytesCliente", "BytesServidor"]:
+                    print(f" {CC_to_w(c)} (MB) |", end="", file=file)
+                elif c in ["TasaCliente", "TasaServidor"]:
+                    print(f" {CC_to_w(c)} (MBps) |", end="", file=file)
+                elif c in ["TiempoCliente", "TiempoServidor"]:
+                    print(f" {CC_to_w(c)} (ms) |", end="", file=file)
+                else:
+                    print(f" {CC_to_w(c)} |", end="", file=file) # Nombre de las columnas
+            print(file=file)
+
+            print("| --- |", end="", file=file)
+            for c in v["1"][p].keys():
+                print(" --- |", end="", file=file)
+            print(file=file)
+
+            for k2, v2 in v.items():
+                # k2: 1, 2, 3, 4, 5, ...
+                # v2: {"TCP": {...}, "UDP": {...}}
+                print(f"| {k2} |", end="", file=file)
+                for c, v3 in v2[p].items():
+                    if c in ["BytesCliente", "BytesServidor", "TasaCliente", "TasaServidor"]:
+                        print(f" {(v3/1e6):.2f} |", end="", file=file)
+                    elif c in ["TiempoCliente", "TiempoServidor"]:
+                        print(f" {(v3*1e3):.2f} |", end="", file=file)
+                    else:
+                        print(f" {v3} |", end="", file=file)
+                print(file=file)
+
+            print(file=file)
+
+
+def main(file=None):
     """Main function."""
     for i in range(1,7):
         logs[f"p{i}"] = dict()
@@ -72,7 +171,14 @@ def main():
         savep(i, "TCP")
         savep(i, "UDP")
 
-    print(logs)
+    tomd("TCP", file)
+    if file is not None:
+        print("<br>", file=file)
+    else:
+        print("<br>")
+    tomd("UDP", file)
 
 if __name__ == "__main__":
-    main()
+    with open('logs.md', 'w') as f:
+        main(file=f)
+
